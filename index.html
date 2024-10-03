@@ -7,5 +7,30 @@
 </head>
 <body>
     
+    <div>
+        <h1>Censo Galático</h1>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+        <input id="searchField" type="text" placeholder="Buscar planeta">
+        <button onclick="displaySearchedPlanet()">Buscar planeta</button>
+    </div>
+
+    <div id="showPlanets" style="margin-bottom: 10px;">
+        <button onclick="displayPlanets()">Exibir todos planetas</button> 
+        <button id="previousPageButton" onclick="previousPage()" disabled>Página anterior</button>
+        <button id="nextPageButton" onclick="nextPage()" disabled>Próxima página</button>
+    </div>
+
+    <div id="planets"></div>
+
+    <div id="planetDetails"></div>
+    
+    <div id="residentDetails"></div>
+
+    <script src="fetch_api.js"></script>
+    <script src="page_navigation.js"></script>
+    <script src="display_planets.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -43,13 +43,11 @@ async function displaySearchedPlanet() {
         currentUrl = nextPageUrl;
     }
 
-    alert('Planeta não encontrado.');
-    
+    alert('Planeta não encontrado.');   
 }
 
 async function displayPlanetDetails(index) {
 
-    // let planetDetails = document.getElementById('planetDetails'); 
     planetDetails.innerHTML = '';
     
     let planet = planetsArray[index]; 
@@ -63,8 +61,6 @@ async function displayPlanetDetails(index) {
     `;
 
     displayResidentsDetails(planet.residents)
-
-    
 }
 
 

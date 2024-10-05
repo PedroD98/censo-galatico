@@ -46,7 +46,7 @@ async function displaySearchedPlanet() {
     alert('Planeta não encontrado.');   
 }
 
-async function displayPlanetDetails(index) {
+function displayPlanetDetails(index) {
 
     planetDetails.innerHTML = '';
     
